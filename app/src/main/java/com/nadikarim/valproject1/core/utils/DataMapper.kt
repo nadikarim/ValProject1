@@ -24,6 +24,7 @@ object DataMapper {
             )
         }
 
+
     fun mapDomainToEntity(input: Agent) = AgentEntity(
         assetPath = input.assetPath,
         background = input.background,
@@ -62,5 +63,4 @@ object DataMapper {
         }
         return agentList
     }
-
 }

@@ -27,8 +27,8 @@ class RemoteDataSource @Inject constructor(private val apiService: ApiService) {
                     emit(ApiResponse.Empty)
                 }
             } catch (e: Exception) {
-                val response = apiService.getAllAgents()
-                Log.e("RemoteDataSource", response.toString())
+                //val response = apiService.getAllAgents()
+                //Log.e("RemoteDataSource", response.toString())
                 emit(ApiResponse.Error(e.toString()))
                 Log.e("RemoteDataSource", e.toString())
             }
